@@ -22,7 +22,7 @@ const User=require("./models/user.js");
 const userRouter=require("./routes/user.js");
 
 
-const dbUrl=process.env.AtLASDB_URL;
+const dbUrl=process.env.ATLASDB_URL;
 
 main()
   .then((res) => {
