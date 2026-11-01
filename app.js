@@ -105,6 +105,7 @@ app.use((err, req, res, next) => {
   //res.status(statusCode).send(message);
 });
 
-app.listen(8080, (req, res) => {
-  console.log("server is listening port on 8080");
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
+  console.log(`server is listening on port ${port}`);
 });
